@@ -8,7 +8,7 @@ categories: Python
 Интерактивные дашборды (аналитические панели) идеально подходят для наглядного представления разнообразных данных. В этом уроке по Plotly Dash мы вам покажем, как создавать их с помощью языка Python.
 В обязанности специалистов по данным часто входит не только анализ, но и визуальное представление результатов. И очень здорово, если это не просто статический PDF-файл или вручную созданные слайды Powerpoint, а интерактивная аналитическая панель. С таким приложением пользователь может взаимодействовать, просматривая показатели и фильтруя их по своему вкусу. Кроме того, при появлении новых данных приложение обновляется. Если вам приходилось ежемесячно или еженедельно заниматься составлением отчётов в Excel или Powerpoint, вы сразу поймёте, о чём речь.
 
-![](images\plotly-dash-interactive-dashboards\interaktive-dashboards-plotly-dash.jpg)
+![](https://raw.githubusercontent.com/evgslesar/evgslesar.github.io/master/_posts/images\plotly-dash-interactive-dashboards\interaktive-dashboards-plotly-dash.jpg)
 
 ## Программное обеспечение для создания дашбордов
 Для создания панелей мониторинга данных есть ряд предложений как коммерческих, так и бесплатных.
@@ -53,9 +53,9 @@ if __name__ == "__main__":
 {% endhighlight %}
 
 Теперь при запуске этой программы в консоли должно появиться следующее. Таким образом, вы запустили у себя сервер Flask, который доступ через веб-браузер по адресу [http://127.0.0.1:8050](http://127.0.0.1:8050/) (только с вашего компьютера, так как 127.0.0.1 – это адрес локального хоста, то есть самого компьютера)
-![](images\plotly-dash-interactive-dashboards\plotly-dash-server.png)
+![](https://raw.githubusercontent.com/evgslesar/evgslesar.github.io/master/_posts/images\plotly-dash-interactive-dashboards\plotly-dash-server.png)
 Вот как это будет выглядеть в браузере:
-![](_posts\images\plotly-dash-interactive-dashboards\screenshot-plotly-dash-tutorial.png)
+![](https://raw.githubusercontent.com/evgslesar/evgslesar.github.io/master/_posts/images/plotly-dash-interactive-dashboards/screenshot-plotly-dash-tutorial.png)
 Пока не особо впечатляет, но тем не менее, у нас уже есть настоящий веб-сайт. Если вы измените что-то в коде и сохраните файл, веб-страница автоматически перезагрузится. Правда иногда она немного подвисает, а затем снова загружается.
 Основной макет приложения определяется через app.layout, где можно указать все возможные детали и структуры HTML-кода, а также диаграммы и виджеты. Во втором примере мы его расширим. Никакого функционала пока нет, так как его мы собираемся написать в следующем разделе.
 
@@ -164,7 +164,7 @@ app.layout = html.Div(
 ),
 
 И вот как наша аналитическая панель отображается в браузере:
-![](_posts\images\plotly-dash-interactive-dashboards\plotly-dash-dashboard-histogramm.png)
+![](https://raw.githubusercontent.com/evgslesar/evgslesar.github.io/master/_posts/images\plotly-dash-interactive-dashboards\plotly-dash-dashboard-histogramm.png)
 
 ## Интерактивная часть панели Plotly Dash
 Итак, постепенно мы подошли к самому интересному. Пришло время поговорить об интерактивной части. Она здесь реализована путем добавления декораторов к соответствующим функциям.
@@ -197,13 +197,13 @@ dcc.Graph(id="histogramm")
 {% endhighlight %}
 
 И теперь мы можем использовать раскрывающийся список и поле ввода в браузере. При этом график будет сразу изменяться.
-![](_posts\images\plotly-dash-interactive-dashboards\plotly-dash-dashboard-interaktivitaet.png)
+![](https://raw.githubusercontent.com/evgslesar/evgslesar.github.io/master/_posts/images\plotly-dash-interactive-dashboards\plotly-dash-dashboard-interaktivitaet.png)
 
 ## Развертывание Plotly Dash в облаке
 Теперь надо сделать так, чтобы аналитическая панель открывалась не только на нашем компьютере. И каждый раз устанавливать Python с необходимыми библиотеками тоже довольно неудобно. Итак, мы хотим разместить дашборд Plotly в облаке, чтобы можно было легко получать к нему доступ через браузер. Теоретически вы также можете заставить свой собственный компьютер или Raspberry Pi выполнять роль сервера, но тогда он должен будет работать без перерывов. Поэтому облачное решение – более удачный вариант.
 К сожалению, процесс "размещения в Интернете" (который также называют развертыванием) не так прост, потому что вам нужно будет создать подходящую среду с необходимыми пакетами и веб-сервером. Веб-сервер, который идёт в комплекте с Dash или Flask, для реальной работы не подходит.
 Раньше хорошим бесплатным вариантом для начала был [pythonanywhere](https://www.pythonanywhere.com/). Но сейчас он не актуален, потому что у библиотеки numpy плохая совместимость с веб-сервером uWSGI. А дата-сайентистам почти невозможно отказаться от numpy и pandas.
 Второй бесплатный сервис – [Heroku](https://heroku.com/). Но для его использования нужно установить специальное приложение с интерфейсом командной строки и разобраться, что такое git ([у нас есть статья о нем](https://databraineo.com/ki-training-resources/i-git-i-git-was-ist-versionskontrolle/)). То есть, придется ознакомиться с еще одним руководством.
-В качестве третьего варианта и хорошей альтернативы AWS я рекомендую [Linode](https://linode.gvw92c.net/x06jx)*, где за небольшие деньги можно получить виртуальную машину Linux.
+В качестве третьего варианта и хорошей альтернативы AWS я рекомендую [Linode](https://linode.gvw92c.net/x06jx), где за небольшие деньги можно получить виртуальную машину Linux.
 Ну вот и все. Удачи вам и радости от изучения бесчисленных возможностей Plotly Dash.
 https://databraineo.com/ki-training-resources/python/interaktive-dashboards-in-python-plotly-dash-tutorial/
