@@ -283,11 +283,11 @@ footer {
   text-align: center;
 }
 
-table {
+table{
+	border: 1px solid #eee;
+	table-layout: fixed;
 	width: 100%;
 	margin-bottom: 20px;
-	border: 1px solid #dddddd;
-	border-collapse: collapse; 
 }
 table th {
 	font-weight: bold;
@@ -295,9 +295,16 @@ table th {
 	background: #efefef;
 	border: 1px solid #dddddd;
 }
-table td {
-	border: 1px solid #dddddd;
-	padding: 5px;
+table td{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: left;
+}
+table tbody tr:nth-child(odd){
+	background: #fff;
+}
+table tbody tr:nth-child(even){
+	background: #F7F7F7;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
