@@ -284,7 +284,8 @@ footer {
 }
 
 table {
-  padding: 3pt;
+  padding: 3px;
+  border: #aaa solid 1px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
