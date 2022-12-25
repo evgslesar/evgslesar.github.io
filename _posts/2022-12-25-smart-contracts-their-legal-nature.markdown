@@ -5,11 +5,10 @@ permalink: /smart-contracts-their-legal-nature/
 date:   2022-12-25 15:33:00 +0800
 categories: Blockchain
 ---
-[Digital Rights CenterIT –  ](https://habr.com/ru/company/digitalrightscenter/blog/)[Corporate blog](https://habr.com/ru/hub/itcompanies/)
+[Digital Rights CenterIT –  ](https://habr.com/ru/company/digitalrightscenter/blog/)[Corporate blog](https://habr.com/ru/hub/itcompanies/).
+In our days, the processes of digitalization and deployment of fintech solutions lead to a fundamental transformation of the legacy principles and tools used in the financial markets of most economies in the world. Due to innovations and infrastructure development, many operations that in the past required a personal presence and a huge amount of time can now be accessed “in just one click” and take only a few minutes.
 
 ![](https://hsto.org/getpro/habr/upload_files/ac5/469/245/ac5469245088272eb7614c4ce13e247e.jpg)
-
-In our days, the processes of digitalization and deployment of fintech solutions lead to a fundamental transformation of the legacy principles and tools used in the financial markets of most economies in the world. Due to innovations and infrastructure development, many operations that in the past required a personal presence and a huge amount of time can now be accessed “in just one click” and take only a few minutes.
 
 The principles of functioning for some innovations were laid down decades ago. The idea of a smart contract was initially proposed in 1994 by American scientist Nick Sabo, who described it as “a digital representation of a set of obligations between the parties, including a protocol for the fulfillment of these obligations.” Szabo was inspired by such researchers as David Chaum and believed that the development of smart contracts with the addition of cryptographic protocols and other digital security mechanisms will be a significant improvement compared to traditional legal contracts.
 
