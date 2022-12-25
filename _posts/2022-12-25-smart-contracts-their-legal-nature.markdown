@@ -18,13 +18,13 @@ So, a smart contract can be defined as an agreement between two or more parties 
 
 In the twenty-first century, we have an opportunity to convert all legacy contracts into digital smart contracts,  therefore, the range of potential applications is expanding significantly. Let's look at some areas where they could be useful.
 
-**Payment automation: **a contract can be programmed in such a way that the required amount is guaranteed to arrive to the specified persons or organizations at the specified time.
+**Payment automation:** a contract can be programmed in such a way that the required amount is guaranteed to arrive to the specified persons or organizations at the specified time.
 
 **Ownership registration:** You can register the documents required to establish or change ownership using electronic smart contracts on the blockchain.
 
-**Energy transactions: **thanks to smart contracts, it becomes possible to create a digital ecosystem where people will exchange energy. In such systems, the sources of electricity or fuel will be linked to smart contracts concluded between individuals or with the participation of some involved organizations able to personalize each customer's consumption.
+**Energy transactions:** thanks to smart contracts, it becomes possible to create a digital ecosystem where people will exchange energy. In such systems, the sources of electricity or fuel will be linked to smart contracts concluded between individuals or with the participation of some involved organizations able to personalize each customer's consumption.
 
-**Intellectual property: **a smart contract can be embedded in any object that is controlled digitally. This is where the concept of "smart property" comes from, which can be combined with IoT ("Internet of Things") objects connected to the web. For example, you can use it to automate the rental of some objects (from houses to cars).
+**Intellectual property:** a smart contract can be embedded in any object that is controlled digitally. This is where the concept of "smart property" comes from, which can be combined with IoT ("Internet of Things") objects connected to the web. For example, you can use it to automate the rental of some objects (from houses to cars).
 
 **Financial services:** cryptocurrencies open up a wide range of different use cases for smart contracts that would otherwise be impossible.
 
