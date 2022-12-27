@@ -5,7 +5,7 @@ permalink: /good-coding-with-python/
 date:   2022-12-27 17:28:00 +0800
 categories: Python
 ---
-I'm not an extremely good programmer, but sometimes I manage to throw dust in people's eyes, and they consider me a senior developer. And over time, it somehow happened that I started to perform a lot of code reviews. Looking through file after file, one day I saw that people and projects change, but what remains the same are the points that I constantly criticize like a real bore. So, I've decided to collect the most common patterns in this chaotic article. Hope they will help you write cleaner and more efficient Python code.
+I'm not an extremely skilled programmer, but sometimes I manage to throw dust in people's eyes, and they consider me a senior developer. And over time, it somehow happened that I started to perform a lot of code reviews. Looking through file after file, one day I saw that people and projects change, but what remains the same are the points that I constantly criticize like a real bore. So, I've decided to collect the most common patterns in this chaotic article. Hope they will help you write cleaner and more efficient Python code.
 
 ## Quitting too early
 This point is definitely in the first place, because I see such things in everyone's code:
@@ -292,7 +292,7 @@ elif v == 'c':
 In most cases, all the repeating fragments that you copy-pasted can be easily combined into one code snippet, either through dictionaries using some kind of mapping, or through getattr / setattr, or by inserting the repeating code into a separate function and calling it with parameters. In other words, the repeating code is converted to a general form and then gets some parameters.
 
 {% highlight python %}
-`setattr(self, f’value_{v}’, 1)`
+setattr(self, f'value_{v}', 1)
 {% endhighlight %}
 
 ## Lines of code interconnected to each other
@@ -318,7 +318,7 @@ rows = [
 writer = csv.DictWriter(..., fieldnames=rows[0].keys())
 {% endhighlight %}
 
-### Hints typing
+## Hints typing
 In this case, everything is extremely simple: you must always use type hints. You can have fun when writing code, but when your code is being read (even by yourself a year later), it's often very difficult to understand what arguments the function has and what type they are. In this regard, from type hints you'll get at least a little help.
 
 {% highlight python %}
