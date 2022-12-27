@@ -5,7 +5,7 @@ permalink: /good-coding-with-python/
 date:   2022-12-27 17:28:00 +0800
 categories: Python
 ---
-I'm not an extremely good programmer, but sometimes I manage to throw dust in people's eyes, and they start thinking that I'm a senior developer. And over time, it somehow happened that I started to perform a lot of code reviews. Looking through file after file, one day I saw that people and projects change, but what remains the same are the points that I constantly criticize. So, I've decided to collect the most common patterns in this chaotic article. Hope they will help you write cleaner and more efficient Python code.
+I’m not an extremely skilled programmer, but sometimes I manage to throw dust in people's eyes, and they start thinking that I'm a senior developer. And over time, it somehow happened that I started to perform a lot of code reviews. Looking through file after file, one day I saw that people and projects change, but what remains the same are the points that I constantly criticize. So, I've decided to collect the most common patterns in this chaotic article. Hope they will help you write cleaner and more efficient Python code.
 
 ## Quitting too early
 This point is definitely in the first place, because I see such things in everyone's code:
