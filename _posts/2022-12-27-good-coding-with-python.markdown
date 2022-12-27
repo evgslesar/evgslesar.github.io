@@ -5,7 +5,7 @@ permalink: /good-coding-with-python/
 date:   2022-12-27 17:28:00 +0800
 categories: Python
 ---
-I'm not an extremely skilled programmer, but sometimes I manage to throw dust in people's eyes, and they consider me a senior developer. And over time, it somehow happened that I started to perform a lot of code reviews. Looking through file after file, one day I saw that people and projects change, but what remains the same are the points that I constantly criticize like a real bore. So, I've decided to collect the most common patterns in this chaotic article. Hope they will help you write cleaner and more efficient Python code.
+I'm not an extremely good programmer, but sometimes I manage to throw dust in people's eyes, and they start thinking that I'm a senior developer. And over time, it somehow happened that I started to perform a lot of code reviews. Looking through file after file, one day I saw that people and projects change, but what remains the same are the points that I constantly criticize. So, I've decided to collect the most common patterns in this chaotic article. Hope they will help you write cleaner and more efficient Python code.
 
 ## Quitting too early
 This point is definitely in the first place, because I see such things in everyone's code:
@@ -23,7 +23,7 @@ def foo(a: bool):
         return False
 {% endhighlight %}
 
-Writing or reading if a: sentences, we remember that somewhere closer to the end we should insert the else: case. But if the code snippet inside the if a: is large enough, then the code in else: will be completely outside the context.
+Writing or reading "if a:" sentences, we remember that somewhere closer to the end we should insert the "else:" case. But if the code snippet inside the "if a:" is large enough, then the code in "else:" will be completely outside the context.
 
 What we could do is to swap the conditions:
 
@@ -40,7 +40,7 @@ def foo(a: bool):
         return True
 {% endhighlight %}
 
-Here we have a much better readability, since at the start we wrote the not a: sentence and threw it out of our heads. But after a more detailed review we'll see, that we don't need the else at all:
+Here we have a much better readability, since we wrote the "if not a:" sentence at the start and can threw it out of our heads. But after a more detailed review we'll see, that we don't need the "else" at all:
 
 {% highlight python %}
 def foo(a: bool):
@@ -56,7 +56,7 @@ def foo(a: bool):
     return True
 {% endhighlight %}
 
-Here is the trick – when writing a function, we usually try to get out of it as quickly as possible by cutting off some bad cases. This technique is great because it allows you to get rid of nesting levels (that is, the else statements), and even unload the programmer's memory by removing some branches of logic.
+Here is the trick – when writing a function, we usually try to get out of it as quickly as possible by cutting off some bad cases. This technique is great because it allows you to get rid of nesting levels (that is, the "else" statements), and even unload the programmer's memory by removing some branches of logic.
 
 An artificial example where we see a kind of parsing:
 
@@ -85,10 +85,11 @@ def scrape(url: str) -> dict:
 {% endhighlight %}
 
 The function is totally "linear", and at a moment of data parsing, we do not have to keep the information in our heads and know for sure: *everything is fine*, the data is in place, there were no errors.
+
 The principle works similarly for loops, but instead of return there will be break or continue.
 
 ## Assignment in one line
-Let's talk about the assignment values to variables. Quite often I see the following:
+Let's talk about the assignment of values to variables. Quite often I see the following:
 
 {% highlight python %}
 if a:
@@ -97,7 +98,7 @@ else:
     v = 2
 {% endhighlight %}
 
-Everything is pretty obvious here – why do we need these extra if-else statements, if everything can be done in one line:
+Everything is pretty obvious here – why do we need these extra "if-else" statements, if everything can be done in one line:
 
 {% highlight python %}
 v = 1 if a else 2
@@ -121,6 +122,7 @@ Here you can ask: what will happen if a not in {0, 1, -1, -2}. And you guess it 
 1. you can simply forget to consider some cases
 2. you can make a typo and write b instead of v – Python will have absolutely nothing against it
 3. you can make a trivial typo when copy-pasting (if you copy sentences and replace their values), and assign the same value in different cases
+
 What should we do? Try to define variables only *once*. In ideal cases any variable declaration should look like this:
 
 {% highlight js %}
