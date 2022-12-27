@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Станет ли "Small Data" следующим прорывом в области науки о данных?"
+title:  Станет ли "Small Data" следующим прорывом в области науки о данных?
 permalink: /small-data-the-next-big-thing/
 date:   2022-12-27 13:25:00 +0800
 categories: Data Science
