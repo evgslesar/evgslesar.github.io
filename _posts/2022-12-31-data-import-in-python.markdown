@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Импорт данных в Python: чтение и запись файлов Excel
+title:  Импорт данных в Python – чтение и запись файлов Excel
 permalink: /data-import-in-python/
 date:   2022-12-31 14:54:00 +0800
 categories: Data Science
