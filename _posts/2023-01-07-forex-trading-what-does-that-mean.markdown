@@ -2,10 +2,9 @@
 layout: post
 title:  Forex Trading – What Does That Mean?
 permalink: /forex-trading-what-does-that-mean/
-date:   2023-01-07 12:55:00 +0800
+date:   2023-01-07 12:28:00 +0800
 categories: Trading
 ---
-
 ## 1) The foreign exchange market is global and has no central entity
 The foreign exchange market, also known as the Forex, is a decentralized global market for the trading of currencies. This means that there is no central exchange or authority that oversees the market. Instead, currencies are traded through a network of banks, dealers, and brokers. Because the Forex market is decentralized, traders can participate from anywhere in the world and can buy and sell currencies at any time. This makes the Forex market one of the most liquid and accessible financial markets in the world.
 
