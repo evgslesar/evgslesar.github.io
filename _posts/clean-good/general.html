@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Clean Good</title>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="/" class="header__logo">
+      <img src="img/logo.svg" alt="Logo Icon">
+    </a>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+    </button>
+    <nav class="header__nav top-menu" data-menu>
+      <ul class="top-menu__list list-reset">
+        <li class="top-menu__item">
+          <a href="general.html">Генеральная уборка</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="after-renovation.html">Послестроительная уборка</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="for-business.html">Для бизнеса</a>
+        </li>
+        <li class="top-menu__item">
+          <a href="about.html">О компании</a>
+        </li>
+      </ul>
+      <a href="tel:89002823300" class="header__nav-tel">8 (900) 282-33-00</a>
+      <a href="#main-form" class="header__nav-btn btn-black" data-scroll>Заказать</a>
+    </nav>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero-basic">
+    <div class="container">
+        <div class="hero-basic__wrapper">
+            <div class="hero-basic__info">
+                <h1 class="hero-basic__header">Закажите генеральную уборку в <span>Краснодаре</span></h1>
+                <p class="hero-basic__text">Чтобы в Вашу жизнь пришло что-то новое и желанное, нужно непременно избавиться от чего-то старого, занимающего пространство.</p>
+                <a href="#main-form" class="hero-basic__btn btn-green" data-scroll>Рассчитать стоимость</a>
+            </div>
+            <div class="hero-basic__imgs">
+                <picture>
+                  <source srcset="img/general/hero-1.webp" type="image/webp">
+                  <img loading="lazy" src="img/general/hero-1.gpg" class="hero-basic__image" alt="general hero image">
+                </picture>
+                <picture>
+                  <source srcset="img/general/hero-2.webp" type="image/webp">
+                  <img loading="lazy" src="img/general/hero-2.gpg" class="hero-basic__image" alt="general hero image">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="included-general section">
+    <div class="container">
+        <h2 class="included-general__header section-title">Что входит в уборку?</h2>
+        <div class="included-general__wrapper">
+            <div class="included-general__item dark-card-small">
+                <img src="img/general/included/1.svg" alt="Обеспыливание всех поверхностей">
+                <h3 class="dark-card-small__title">Обеспыливание всех поверхностей</h3>
+            </div>
+            <div class="included-general__item dark-card-small">
+                <img src="img/general/included/2.svg" alt="Комплексная уборка кухонной зоны">
+                <h3 class="dark-card-small__title">Комплексная уборка кухонной зоны</h3>
+            </div>
+            <div class="included-general__item dark-card-small">
+                <img src="img/general/included/3.svg" alt="Комплексная уборка санузла">
+                <h3 class="dark-card-small__title">Комплексная уборка санузла</h3>
+            </div>
+            <div class="included-general__item dark-card-small">
+                <img src="img/general/included/4.svg" alt="Мойка стандартных окон с двух сторон">
+                <h3 class="dark-card-small__title">Мойка стандартных окон с двух сторон</h3>
+            </div>
+            <div class="included-general__item dark-card-small">
+                <img src="img/general/included/5.svg" alt="Сбор мусора проф. пылеводососом, мойка пола">
+                <h3 class="dark-card-small__title">Сбор мусора проф. пылеводососом, мойка пола</h3>
+            </div>
+            <div class="included-general__item dark-card-small">
+                <img src="img/general/included/6.svg" alt="Мойка мебели снаружи">
+                <h3 class="dark-card-small__title">Мойка мебели снаружи</h3>
+            </div>
+            <div class="included-general__item dark-card-small">
+                <img src="img/general/included/7.svg" alt="Обеспыливание люстр, светильников, плафонов">
+                <h3 class="dark-card-small__title">Обеспыливание люстр, светильников, плафонов</h3>
+            </div>
+            <div class="included-general__item dark-card-small">
+                <img src="img/general/included/8.svg" alt="Озонирование">
+                <h3 class="dark-card-small__title">Озонирование</h3>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="price-general section">
+    <div class="container">
+        <h2 class="price-general__header section-title">Стоимость</h2>
+        <div class="price-general__container">
+            <div class="price-general__wrapper swiper-wrapper">
+                <div class="price-general__item price-card swiper-slide">
+                    <a href="#" class="price-card__link"></a>
+                    <h3 class="price-card__area">5-40 кв.м</h3>
+                    <button type="button" class="price-card__price btn-black">от 120р/м</button>
+                </div>
+                <div class="price-general__item price-card swiper-slide">
+                    <a href="#" class="price-card__link"></a>
+                    <h3 class="price-card__area">40-100 кв.м</h3>
+                    <button type="button" class="price-card__price btn-black">от 90р/м</button>
+                </div>
+                <div class="price-general__item price-card swiper-slide">
+                    <a href="#" class="price-card__link"></a>
+                    <h3 class="price-card__area">100-200 кв.м</h3>
+                    <button type="button" class="price-card__price btn-black">от 60р/м</button>
+                </div>
+                <div class="price-general__item price-card swiper-slide">
+                    <a href="#" class="price-card__link"></a>
+                    <h3 class="price-card__area">200-500 кв.м</h3>
+                    <button type="button" class="price-card__price btn-black">от 40р/м</button>
+                </div>
+                <div class="price-general__item price-card swiper-slide">
+                    <a href="#" class="price-card__link"></a>
+                    <h3 class="price-card__area">500 кв.м и выше</h3>
+                    <button type="button" class="price-card__price btn-black">Индивидуально</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="extra-services-general section">
+    <div class="container">
+        <h2 class="extra-services-general__header section-title">Дополнительные услуги:</h2>
+        <div class="extra-services-general__wrapper">
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/1.svg" alt="Мойка микроволновой печи внутри">
+                <h3 class="dark-card-small__title">Мойка микроволновой печи внутри</h3>
+                <span class="dark-card-small__add-info">300р</span>
+            </div>
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/2.svg" alt="Мойка холодильника или печи внутри">
+                <h3 class="dark-card-small__title">Мойка холодильника или печи внутри</h3>
+                <span class="dark-card-small__add-info">500р</span>
+            </div>
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/3.svg" alt="Вывоз мусора (стоимость рассчитывается на месте)">
+                <h3 class="dark-card-small__title">Вывоз мусора <small>(стоимость рассчитывается на месте)</small></h3>
+                <span class="dark-card-small__add-info"></span>
+            </div>
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/4.svg" alt="Мойка окон">
+                <h3 class="dark-card-small__title">Мойка окон</h3>
+                <span class="dark-card-small__add-info">от 100р <small>за створку</small></span>
+            </div>
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/5.svg" alt="Глажка белья">
+                <h3 class="dark-card-small__title">Глажка белья</h3>
+                <span class="dark-card-small__add-info">от 200р</span>
+            </div>
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/6.svg" alt="Химчистка мягкой мебели">
+                <h3 class="dark-card-small__title">Химчистка мягкой мебели</h3>
+                <span class="dark-card-small__add-info">600р <small>за место</small></span>
+            </div>
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/7.svg" alt="Стирка занавесок">
+                <h3 class="dark-card-small__title">Стирка занавесок</h3>
+                <span class="dark-card-small__add-info">от 200р</span>
+            </div>
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/8.svg" alt="Уборка лотка питомца">
+                <h3 class="dark-card-small__title">Уборка лотка питомца</h3>
+                <span class="dark-card-small__add-info">от 100р</span>
+            </div>
+            <div class="extra-services-general__item dark-card-small">
+                <img src="img/general/extra-services/9.svg" alt="Срочный или ночной выезд">
+                <h3 class="dark-card-small__title">Срочный или ночной выезд</h3>
+                <span class="dark-card-small__add-info">+30% <small>к стоимости</small></span>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="main-form section" id="main-form">
+    <div class="container">
+        <h2 class="section-title main-form__title">Рассчитайте точную стоимость уборки</h2>
+        <div class="main-form__wrapper">
+            <picture>
+              <source srcset="img/main-form-img.webp" type="image/webp">
+              <img loading="lazy" src="img/main-form-img.jpg" class="main-form__image" alt="">
+            </picture>
+            <form action="#" class="main-form__content">
+                <label class="main-form__label main-form__label--name">
+                    <span>Ваше имя</span>
+                    <input type="text">
+                </label>
+                <label class="main-form__label main-form__label--email">
+                    <span>Ваш e-mail</span>
+                    <input type="email">
+                </label>
+                <label class="main-form__label main-form__label--phone">
+                    <span>Ваш номер телефона</span>
+                    <input type="tel">
+                </label>
+                <label class="main-form__label main-form__label--theme">
+                    <span>Тема</span>
+                    <input type="text">
+                </label>
+                <label class="main-form__label main-form__label--textarea">
+                    <span>Ваше сообщение <small>(Не обязательно)</small></span>
+                    <textarea class="main-form__textarea"></textarea>
+                </label>
+                <button class="main-form__btn btn-black" type="submit">Отправить</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+      <section class="affecting-factors section">
+    <div class="container">
+        <h2 class="section-title affecting-factors__title">На сроки работы и стоимость влияет:</h2>
+        <div class="affecting-factors__wrapper">
+            <picture>
+              <source srcset="img/affecting-factors-img.webp" type="image/webp">
+              <img loading="lazy" src="img/affecting-factors-img.jpg" class="affecting-factors__image" alt="">
+            </picture>
+            <ul class="affecting-factors__list list-reset">
+                <li class="affecting-factors__item">
+                    <a href="#" class="btn-lightgreen">Условия работы</a>
+                    <span>Наличие горячей и холодной воды, освещения и присутствия посторонних людей влияет на время работы, но никак не влияет на стоимость!</span>
+                </li>
+                <li class="affecting-factors__item">
+                    <a href="#" class="btn-lightgreen">Площадь уборки</a>
+                    <span>Расчет стоимости производится согласно площади предстоящей уборки, цена обговаривается заранее и является фиксированной!</span>
+                </li>
+                <li class="affecting-factors__item">
+                    <a href="#" class="btn-lightgreen">Степень загрязнения</a>
+                    <span>При личном осмотре, вашем описании или фотографий фиксируется стоимость и фронт предстоящих работ!</span>
+                </li>
+                <li class="affecting-factors__item">
+                    <a href="#" class="btn-lightgreen">Выполняемые работы</a>
+                    <span>Количество дополнительных услуг оказывает влияние на стоимость и время предстоящей уборки!</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+      <section class="equipment section">
+    <div class="container equipment__container">
+        <h2 class="section-title equipment__title">Наше оборудование</h2>
+        <div class="equipment__subsection">
+            <div class="equipment__wrapper swiper-wrapper">
+                <div class="equipment__item swiper-slide">
+                    <a href="#" class="equipment__link">
+                        <picture>
+                        <source srcset="img/general/equipment/1.webp" type="image/webp">
+                        <img loading="lazy" src="img/general/equipment/1.jpg" class="equipment__item-image" alt="equipment image">
+                        </picture>
+                        <h4 class="equipment__item-title">Оборудование Karcher</h4>
+                    </a>
+                </div>
+                <div class="equipment__item swiper-slide">
+                    <a href="#" class="equipment__link">
+                        <picture>
+                        <source srcset="img/general/equipment/2.webp" type="image/webp">
+                        <img loading="lazy" src="img/general/equipment/2.jpg" class="equipment__item-image" alt="equipment image">
+                        </picture>
+                        <h4 class="equipment__item-title">Инвентарь TTS</h4>
+                    </a>
+                </div>
+                <div class="equipment__item swiper-slide">
+                    <a href="#" class="equipment__link">
+                        <picture>
+                        <source srcset="img/general/equipment/3.webp" type="image/webp">
+                        <img loading="lazy" src="img/general/equipment/3.jpg" class="equipment__item-image" alt="equipment image">
+                        </picture>
+                        <h4 class="equipment__item-title">Проф. химия Kiehl</h4>
+                    </a>
+                </div>
+                <div class="equipment__item swiper-slide">
+                    <a href="#" class="equipment__link">
+                        <picture>
+                        <source srcset="img/general/equipment/4.webp" type="image/webp">
+                        <img loading="lazy" src="img/general/equipment/4.jpg" class="equipment__item-image" alt="equipment image">
+                        </picture>
+                        <h4 class="equipment__item-title">Проф. химия Pro-brite</h4>
+                    </a>
+                </div>
+                <div class="equipment__item swiper-slide">
+                    <a href="#" class="equipment__link">
+                        <picture>
+                        <source srcset="img/general/equipment/5.webp" type="image/webp">
+                        <img loading="lazy" src="img/general/equipment/5.jpg" class="equipment__item-image" alt="equipment image">
+                        </picture>
+                        <h4 class="equipment__item-title">Проф. химия Grass</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section class="results section">
+    <div class="container results__container">
+        <h2 class="section-title results__title">Результаты наших работ</h2>
+        <div class="results__subsection">
+            <div class="results__wrapper swiper-wrapper">
+                <div class="results__item swiper-slide">
+                    <a href="#" class="results__link">
+                        <picture>
+                            <source srcset="img/general/results/1-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/general/results/1-1.jpg" class="results__item-image" alt="results image">
+                        </picture>
+                        <picture>
+                            <source srcset="img/general/results/1-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/general/results/1-2.jpg" class="results__item-image" alt="results image">
+                        </picture>
+                    </a>
+                </div>
+                <div class="results__item swiper-slide">
+                    <a href="#" class="results__link">
+                        <picture>
+                            <source srcset="img/general/results/2-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/general/results/2-1.jpg" class="results__item-image" alt="results image">
+                        </picture>
+                        <picture>
+                            <source srcset="img/general/results/2-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/general/results/2-2.jpg" class="results__item-image" alt="results image">
+                        </picture>
+                    </a>
+                </div>
+                <div class="results__item swiper-slide">
+                    <a href="#" class="results__link">
+                        <picture>
+                            <source srcset="img/general/results/3-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/general/results/3-1.jpg" class="results__item-image" alt="results image">
+                        </picture>
+                        <picture>
+                            <source srcset="img/general/results/3-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/general/results/3-2.jpg" class="results__item-image" alt="results image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <a href="#" class="footer__logo">
+      <img src="img/logo.svg" alt="Logo Icon">
+    </a>
+    <div class="footer__wrapper">
+      <div class="footer__contacts">
+        <span>Контакты:</span>
+        <a href="#" class="footer__link btn-green">WhatsApp</a>
+        <a href="tel:89002823300" class="footer__link btn-green">8 (900) 282-33-00</a>
+        <a href="mailto:cleangood.krd@gmail.com" class="footer__link btn-green">cleangood.krd@gmail.com</a>
+      </div>
+      <div class="footer__map">
+        <span>Наш адрес: ул. Уральская, 75/1</span>
+        <div class="footer__map-content"></div>
+      </div>
+    </div>
+    <p class="copywright">Copyright © 2023 clean-good.ru | Все права защищены</p>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
