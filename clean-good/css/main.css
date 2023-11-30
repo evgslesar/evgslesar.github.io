@@ -1096,7 +1096,6 @@ a:hover {
   min-height: 1002px;
   color: var(--light-color);
   font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.3);
   position: relative;
 }
 .hero-about::after {
@@ -1104,12 +1103,14 @@ a:hover {
   position: absolute;
   left: 0;
   bottom: 0;
+  height: 100%;
+  width: 100%;
   background-image: url("../img/about/hero-bg.webp");
+  -webkit-filter: saturate(90%) brightness(50%);
+  filter: saturate(90%) brightness(50%);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  height: 100%;
-  width: 100%;
   z-index: -1;
 }
 @media (max-width: 1440px) {
