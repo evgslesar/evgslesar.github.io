@@ -1092,8 +1092,8 @@ a:hover {
 
 .hero-about {
   margin-top: 100px;
-  padding: 180px 0 80px;
-  min-height: 1002px;
+  padding: 50px 0 210px;
+  min-height: 900px;
   color: var(--light-color);
   font-size: 24px;
   position: relative;
@@ -1109,7 +1109,7 @@ a:hover {
   -webkit-filter: saturate(90%) brightness(50%);
   filter: saturate(90%) brightness(50%);
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top -30px;
   background-size: cover;
   z-index: -1;
 }
@@ -1148,21 +1148,21 @@ a:hover {
   }
 }
 .hero-about__info {
-  margin-top: 640px;
+  margin-top: 500px;
 }
 @media (max-width: 1240px) {
   .hero-about__info {
-    margin-top: 590px;
+    margin-top: 450px;
   }
 }
 @media (max-width: 970px) {
   .hero-about__info {
-    margin-top: 500px;
+    margin-top: 400px;
   }
 }
 @media (max-width: 500px) {
   .hero-about__info {
-    margin-top: 450px;
+    margin-top: 350px;
   }
 }
 .hero-about__header {
