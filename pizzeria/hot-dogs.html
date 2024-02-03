@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
-  <title>Pizzeria</title>
+  <title>MaxGraph New Site</title>
   <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
@@ -67,7 +67,12 @@
             <li class="header-bottom__menu-item"><a href="peetas.html">Питы</a></li>
             <li class="header-bottom__menu-item"><a href="snacks.html">Закуски</a></li>
             <li class="header-bottom__menu-item"><a href="hot-dogs.html">Хот-доги</a></li>
-            <li class="header-bottom__menu-item"><a href="contacts.html">Контакты</a></li>
+            <li class="header-bottom__menu-item header-bottom__menu-item--parent">
+              <a href="contacts.html">Контакты</a> <span class="menu-arrow"></span>
+              <ul class="header-bottom__submenu-list list-reset">
+                <li class="header-bottom__submenu-item"><a href="personal.html">Кабинет пользователя</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <a href="cart.html" class="header-bottom__cart">
@@ -161,6 +166,59 @@
 
     </main>
     <div class="graph-modal">
+    <div class="graph-modal__container product-detail" role="dialog" aria-modal="true" data-graph-target="product-detail">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content product-detail__content">
+            <img src="img/pizza-card.webp" alt="Pizza" class="product-detail__img">
+            <div class="product-detail__info">
+                <h3 class="product-detail__title">
+                    Фирменная
+                </h3>
+                <p class="product-detail__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
+                <div class="product-detail__options">
+                    <div class="product-detail__size">
+                        <label class="product-detail__size-label" >
+                            <input class="product-detail__size-input" type="radio"  name="option[diameter]" checked />
+                            <span></span>
+                            <strong>36 см</strong> 800 г
+                        </label>
+                        <label class="product-detail__size-label" >
+                            <input class="product-detail__size-input" type="radio"  name="option[diameter]" />
+                            <span></span>
+                            <strong>25 см</strong> 460 г
+                        </label>
+                    </div>
+                    <div class="product-detail__dough">
+                        <label class="product-detail__dough-label" >
+                            <input class="product-detail__dough-input" type="radio" name="option[dough]" value="1" data-index="0" checked />
+                            <span>пышное</span>
+                        </label>
+                        <label class="product-detail__dough-label" >
+                            <input class="product-detail__dough-input" type="radio" name="option[dough]" value="2" data-index="1" />
+                            <span>тонкое</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn-reset product-detail__ingr-btn" data-graph-path="ingred">+ ингредиенты</button>
+                <div class="product-detail__quantuty quantity">
+                    <button class="minus quantity__button btn-reset" aria-label="Уменьшить" disabled>
+                        <svg>
+                            <use xlink:href="img/sprite.svg#minus"></use>
+                        </svg>
+                    </button>
+                    <input class="number dim" type="text" step="1" min="1" name="quantity" value="1" size="4"
+                        title="Количество" pattern="[0-9]*" >
+                    <button class="plus quantity__button btn-reset" aria-label="Увеличить">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#plus"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-detail__price">790 ₽</div>
+                <button type="button" class="product-detail__price btn btn--green btn-reset" title="Добавить в корзину">В корзину</button>
+            </div>
+        </div>
+    </div>
     <div class="graph-modal__container ingred-container" role="dialog" aria-modal="true" data-graph-target="ingred">
         <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
         <div class="graph-modal__content ingred">
@@ -562,7 +620,7 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class="footer__logo-block">
-            <a href="/pizzeria/" class="footer__logo">
+            <a href="#" class="footer__logo">
                 <img src="img/logo-small.svg" alt="Дом Пиццы лого футер">
             </a>
         </div>

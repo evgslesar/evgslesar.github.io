@@ -18,6 +18,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_accordion_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_accordion_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_amount_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/amount.js */ "./src/js/components/amount.js");
 /* harmony import */ var _components_amount_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_amount_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_toggle_menu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/toggle-menu.js */ "./src/js/components/toggle-menu.js");
+/* harmony import */ var _components_toggle_menu_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_toggle_menu_js__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -397,6 +400,49 @@ var swiper_featured = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".featu
 //     swiper: swiper,
 //   },
 // });
+
+/***/ }),
+
+/***/ "./src/js/components/toggle-menu.js":
+/*!******************************************!*\
+  !*** ./src/js/components/toggle-menu.js ***!
+  \******************************************/
+/***/ (() => {
+
+const isMobile = {
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+  },
+  any: function () {
+    return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+  }
+};
+if (isMobile.any() || window.innerWidth <= 930 || window.matchMedia('(max-width: 930px)').matches) {
+  document.body.classList.add('_touch');
+  let menuArrows = document.querySelectorAll('.menu-arrow');
+  if (menuArrows.length > 0) {
+    for (let i = 0; i < menuArrows.length; i++) {
+      const menuArrow = menuArrows[i];
+      menuArrow.addEventListener('click', function (e) {
+        menuArrow.parentElement.classList.toggle('visible');
+      });
+    }
+  }
+} else {
+  document.body.classList.add('_pc');
+}
 
 /***/ }),
 

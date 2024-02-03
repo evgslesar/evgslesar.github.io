@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
-  <title>Pizzeria</title>
+  <title>MaxGraph New Site</title>
   <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
@@ -67,7 +67,12 @@
             <li class="header-bottom__menu-item"><a href="peetas.html">Питы</a></li>
             <li class="header-bottom__menu-item"><a href="snacks.html">Закуски</a></li>
             <li class="header-bottom__menu-item"><a href="hot-dogs.html">Хот-доги</a></li>
-            <li class="header-bottom__menu-item"><a href="contacts.html">Контакты</a></li>
+            <li class="header-bottom__menu-item header-bottom__menu-item--parent">
+              <a href="contacts.html">Контакты</a> <span class="menu-arrow"></span>
+              <ul class="header-bottom__submenu-list list-reset">
+                <li class="header-bottom__submenu-item"><a href="personal.html">Кабинет пользователя</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <a href="cart.html" class="header-bottom__cart">
@@ -165,7 +170,7 @@
                             <img src="img/pizza-card.webp" alt="Pizza" class="product-card__img">
                             <div class="product-card__content">
                                 <h3 class="product-card__title">
-                                    <a href="#" class="product-card__link">Креветка бекон</a>
+                                    <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Креветка бекон</button>
                                 </h3>
                                 <p class="product-card__descr">Сыр Моцарелла, Соус Сливочный, Сыр Чеддер, Курица, Помидоры, Орегано</p>
                                 <div class="product-card__options">
@@ -211,7 +216,7 @@
                             <img src="img/pizza-card.webp" alt="Pizza" class="product-card__img">
                             <div class="product-card__content">
                                 <h3 class="product-card__title">
-                                    <a href="#" class="product-card__link">Фирменная</a>
+                                    <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Фирменная</button>
                                 </h3>
                                 <p class="product-card__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                                 <div class="product-card__options">
@@ -257,7 +262,7 @@
                             <img src="img/pizza-card.webp" alt="Pizza" class="product-card__img">
                             <div class="product-card__content">
                                 <h3 class="product-card__title">
-                                    <a href="#" class="product-card__link">4 сезона</a>
+                                    <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">4 сезона</button>
                                 </h3>
                                 <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                                 <div class="product-card__options">
@@ -303,7 +308,7 @@
                             <img src="img/pizza-card.webp" alt="Pizza" class="product-card__img">
                             <div class="product-card__content">
                                 <h3 class="product-card__title">
-                                    <a href="#" class="product-card__link">Баварская</a>
+                                    <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Баварская</button>
                                 </h3>
                                 <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, кукуруза консервированная, перец Халапеньо, фрикадельки из говядины, перец болгарский, чипсы Начос, фирменный томатный соус</p>
                                 <div class="product-card__options">
@@ -349,7 +354,7 @@
                             <img src="img/pizza-card.webp" alt="Pizza" class="product-card__img">
                             <div class="product-card__content">
                                 <h3 class="product-card__title">
-                                    <a href="#" class="product-card__link">Куриная BBQ</a>
+                                    <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Куриная BBQ</button>
                                 </h3>
                                 <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                                 <div class="product-card__options">
@@ -444,16 +449,10 @@
         <div class="pizzas-section__box">
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="meat">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizza-card.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Креветка бекон</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Креветка бекон</button>
                         </h3>
                         <p class="product-card__descr">Сыр Моцарелла, Соус Сливочный, Сыр Чеддер, Курица, Помидоры, Орегано</p>
                         <div class="product-card__options">
@@ -490,16 +489,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="closed">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="product-card__tobasket-chkbx custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/2.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Фирменная</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Фирменная</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -536,16 +529,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="spicy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="product-card__tobasket-chkbx custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/3.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">4 сезона</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">4 сезона</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -582,16 +569,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="closed">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="product-card__tobasket-chkbx custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/4.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Куриная BBQ</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Куриная BBQ</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -628,16 +609,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="spicy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="product-card__tobasket-chkbx custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/5.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Креветка бекон</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Креветка бекон</button>
                         </h3>
                         <p class="product-card__descr">Сыр Моцарелла, Соус Сливочный, Сыр Чеддер, Курица, Помидоры, Орегано</p>
                         <div class="product-card__options">
@@ -674,16 +649,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="spicy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="product-card__tobasket-chkbx custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/6.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Фирменная</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Фирменная</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -720,16 +689,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="marine">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="product-card__tobasket-chkbx custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/7.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">4 сезона</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">4 сезона</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -766,16 +729,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="closed">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="product-card__tobasket-chkbx custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/8.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Баварская</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Баварская</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, кукуруза консервированная, перец Халапеньо, фрикадельки из говядины, перец болгарский, чипсы Начос, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -812,16 +769,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="spicy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/9.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Баварская</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Баварская</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, кукуруза консервированная, перец Халапеньо, фрикадельки из говядины, перец болгарский, чипсы Начос, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -858,16 +809,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="marine">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/10.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Креветка бекон</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Креветка бекон</button>
                         </h3>
                         <p class="product-card__descr">Сыр Моцарелла, Соус Сливочный, Сыр Чеддер, Курица, Помидоры, Орегано</p>
                         <div class="product-card__options">
@@ -904,16 +849,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="marine">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/11.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Фирменная</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Фирменная</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -950,16 +889,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="spicy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/12.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Куриная BBQ</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Куриная BBQ</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -996,16 +929,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="veggy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/13.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">4 сезона</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">4 сезона</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1042,16 +969,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="marine">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/13.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Баварская</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Баварская</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, кукуруза консервированная, перец Халапеньо, фрикадельки из говядины, перец болгарский, чипсы Начос, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1088,16 +1009,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="closed">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/14.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Куриная BBQ</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Куриная BBQ</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1134,16 +1049,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="veggy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/15.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Креветка бекон</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Креветка бекон</button>
                         </h3>
                         <p class="product-card__descr">Сыр Моцарелла, Соус Сливочный, Сыр Чеддер, Курица, Помидоры, Орегано</p>
                         <div class="product-card__options">
@@ -1180,16 +1089,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="meat">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/16.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Фирменная</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Фирменная</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1226,16 +1129,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="veggy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/17.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Баварская</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Баварская</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, кукуруза консервированная, перец Халапеньо, фрикадельки из говядины, перец болгарский, чипсы Начос, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1272,16 +1169,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="meat">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/18.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Креветка бекон</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Креветка бекон</button>
                         </h3>
                         <p class="product-card__descr">Сыр Моцарелла, Соус Сливочный, Сыр Чеддер, Курица, Помидоры, Орегано</p>
                         <div class="product-card__options">
@@ -1318,16 +1209,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="veggy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/19.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">4 сезона</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">4 сезона</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1364,16 +1249,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="spicy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/20.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Фирменная</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Фирменная</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1410,16 +1289,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="meat">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/21.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">4 сезона</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">4 сезона</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1456,16 +1329,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="veggy">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/22.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Куриная BBQ</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Куриная BBQ</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1502,16 +1369,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="closed">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/23.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Баварская</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Баварская</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, кукуруза консервированная, перец Халапеньо, фрикадельки из говядины, перец болгарский, чипсы Начос, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1548,16 +1409,10 @@
             </div>
             <div class="pizzas-section__card pizzas-section__card--visible">
                 <div class="product-card"  data-target="marine">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/pizzas/24.webp" alt="Pizza" class="product-card__img">
                     <div class="product-card__content">
                         <h3 class="product-card__title">
-                            <a href="#" class="product-card__link">Куриная BBQ</a>
+                            <button type="button" class="btn-reset product-card__link" data-graph-path="product-detail">Куриная BBQ</button>
                         </h3>
                         <p class="product-card__descr">Моцарелла, сыр Чеддер, помидоры Черри, огурцы маринованные, рваная свинина BBQ, лук красный, бекон, фирменный томатный соус</p>
                         <div class="product-card__options">
@@ -1606,16 +1461,10 @@
             </div>
             <div class="peetas-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/peetas/1.webp" alt="peeta" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Пита с индейкой</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Пита с индейкой</button>
                         </h3>
                         <p class="productcard-simple__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">250 ₽</button>
@@ -1624,16 +1473,10 @@
             </div>
             <div class="peetas-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/peetas/2.webp" alt="peeta" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Пита с курицей</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Пита с курицей</button>
                         </h3>
                         <p class="productcard-simple__descr">Сыр Моцарелла, Соус Сливочный, Сыр Чеддер, Курица, Помидоры, Орегано</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">250 ₽</button>
@@ -1642,16 +1485,10 @@
             </div>
             <div class="peetas-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/peetas/3.webp" alt="peeta" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Пита с рваной свининой</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Пита с рваной свининой</button>
                         </h3>
                         <p class="productcard-simple__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">250 ₽</button>
@@ -1667,16 +1504,10 @@
         <div class="snacks-section__box">
             <div class="snacks-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/snacks/1.webp" alt="snack" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1685,16 +1516,10 @@
             </div>
             <div class="snacks-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/snacks/2.webp" alt="snack" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1703,16 +1528,10 @@
             </div>
             <div class="snacks-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/snacks/3.webp" alt="snack" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1721,16 +1540,10 @@
             </div>
             <div class="snacks-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/snacks/4.webp" alt="snack" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1739,16 +1552,10 @@
             </div>
             <div class="snacks-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/snacks/5.webp" alt="snack" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1757,16 +1564,10 @@
             </div>
             <div class="snacks-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/snacks/6.webp" alt="snack" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1782,16 +1583,10 @@
         <div class="sandviches-section__box">
             <div class="sandviches-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/sandviches/1.webp" alt="sandviches" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Багет пшеничный, соус Цезарь, куриное филе, салат Айсберг, помидоры Черри, сып Пармезан</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1800,16 +1595,10 @@
             </div>
             <div class="sandviches-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/sandviches/1.webp" alt="sandviches" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Багет пшеничный, соус BBQ, сыр Чеддер, соус Шрирачи, огурцы маринованные, Баварская колбаса, соус горчичный, перец Халапеньо</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1818,16 +1607,10 @@
             </div>
             <div class="sandviches-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/sandviches/1.webp" alt="sandviches" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Багет пшеничный, соус Бургер, сыр Чеддер, салат Айсберг, помидоры Черри, индейка BBQ, огурцы маринованные</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1836,16 +1619,10 @@
             </div>
             <div class="sandviches-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/sandviches/1.webp" alt="sandviches" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</button>
                         </h3>
                         <p class="productcard-simple__descr">Багет пшеничный, соус BBQ, сыр Чеддер, салат Айсберг, помидоры Черри, рваная свинина BBQ</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1854,16 +1631,10 @@
             </div>
             <div class="sandviches-section__card">
                 <div class="productcard-simple">
-                    <div class="product-card__tobasket">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" name="tobasket" id="tobasket" class="custom-checkbox__field">
-                            <span class="custom-checkbox__content"></span>
-                        </label>
-                    </div>
                     <img src="img/sandviches/1.webp" alt="sandviches" class="productcard-simple__img">
                     <div class="productcard-simple__content">
                         <h3 class="productcard-simple__title">
-                            <a href="#" class="productcard-simple__link">Сливочный цыпленок</a>
+                            <button type="button" class="btn-reset productcard-simple__link" data-graph-path="product-detail">Сливочный цыпленок</a>
                         </h3>
                         <p class="productcard-simple__descr">Багет пшеничный, соус горчичный, сыр Чеддер, салат Айсберг, помидоры Черри, ветчина из индейки, лук красный</p>
                         <button type="button" class="productcard-simple__price btn btn-reset" title="Добавить в корзину">790 ₽</button>
@@ -1950,6 +1721,59 @@
 
     </main>
     <div class="graph-modal">
+    <div class="graph-modal__container product-detail" role="dialog" aria-modal="true" data-graph-target="product-detail">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content product-detail__content">
+            <img src="img/pizza-card.webp" alt="Pizza" class="product-detail__img">
+            <div class="product-detail__info">
+                <h3 class="product-detail__title">
+                    Фирменная
+                </h3>
+                <p class="product-detail__descr">Моцарелла, колбаса пепперони, бекон, помидоры Черри, шампиньоны, фирменный томатный соус</p>
+                <div class="product-detail__options">
+                    <div class="product-detail__size">
+                        <label class="product-detail__size-label" >
+                            <input class="product-detail__size-input" type="radio"  name="option[diameter]" checked />
+                            <span></span>
+                            <strong>36 см</strong> 800 г
+                        </label>
+                        <label class="product-detail__size-label" >
+                            <input class="product-detail__size-input" type="radio"  name="option[diameter]" />
+                            <span></span>
+                            <strong>25 см</strong> 460 г
+                        </label>
+                    </div>
+                    <div class="product-detail__dough">
+                        <label class="product-detail__dough-label" >
+                            <input class="product-detail__dough-input" type="radio" name="option[dough]" value="1" data-index="0" checked />
+                            <span>пышное</span>
+                        </label>
+                        <label class="product-detail__dough-label" >
+                            <input class="product-detail__dough-input" type="radio" name="option[dough]" value="2" data-index="1" />
+                            <span>тонкое</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn-reset product-detail__ingr-btn" data-graph-path="ingred">+ ингредиенты</button>
+                <div class="product-detail__quantuty quantity">
+                    <button class="minus quantity__button btn-reset" aria-label="Уменьшить" disabled>
+                        <svg>
+                            <use xlink:href="img/sprite.svg#minus"></use>
+                        </svg>
+                    </button>
+                    <input class="number dim" type="text" step="1" min="1" name="quantity" value="1" size="4"
+                        title="Количество" pattern="[0-9]*" >
+                    <button class="plus quantity__button btn-reset" aria-label="Увеличить">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#plus"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-detail__price">790 ₽</div>
+                <button type="button" class="product-detail__price btn btn--green btn-reset" title="Добавить в корзину">В корзину</button>
+            </div>
+        </div>
+    </div>
     <div class="graph-modal__container ingred-container" role="dialog" aria-modal="true" data-graph-target="ingred">
         <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
         <div class="graph-modal__content ingred">
@@ -2351,7 +2175,7 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class="footer__logo-block">
-            <a href="/pizzeria/" class="footer__logo">
+            <a href="#" class="footer__logo">
                 <img src="img/logo-small.svg" alt="Дом Пиццы лого футер">
             </a>
         </div>
