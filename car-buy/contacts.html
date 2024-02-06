@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Car Buy</title>
+  <!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="/car-buy/" class="header__logo">
+        <img src="img/logo.svg" alt="Logotype">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item nav__item--active"><a href="/" class="nav__link">Home</a></li>
+          <li class="nav__item nav__item--dropdown"><a href="catalog.html" class="nav__link">Used Cars <i class="icon-head-angle-down"></i></a>
+            <ul class="list-reset">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="finance.html" class="nav__link">Finance</a></li>
+          <li class="nav__item nav__item--dropdown"><a href="single.html" class="nav__link">Services <i class="icon-head-angle-down"></i></a>
+            <ul class="list-reset">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Delivery</a></li>
+          <li class="nav__item nav__item--dropdown"><a href="contacts.html" class="nav__link">Contact <i class="icon-head-angle-down"></i></a>
+            <ul class="list-reset">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Warranty</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+    <main class="main">
+      <section class="contacts-hero">
+    <div class="contacts-hero__img-container">
+        <img src="img/contacts-hero-bg.webp" alt="Car Image" class="contacts-hero__img">
+    </div>
+    <div class="contacts-hero__content">
+        <h1 class="contacts-hero__title main-title">Our contacts</h1>
+        <span class="contacts-hero__subtitle">Have a question? Lets connect</span>
+    </div>
+</section>
+      <section class="contacts-perfom">
+    <div class="contacts-perfom__container container">
+        <h2 class="contacts-perfom__title section-title">Contact FTR Performance</h2>
+        <div class="contacts-perfom__content">
+            <div class="contacts-perfom__item">
+                <img class="contacts-perfom__item-img" src="img/location.svg" alt="Location icon">
+                <h4 class="contacts-perfom__item-name">Address</h4>
+                <span class="contacts-perfom__item-value">171 West Street Dunstable Bedfordshire LU6 1PD</span>
+            </div>
+            <div class="contacts-perfom__item">
+                <img class="contacts-perfom__item-img" src="img/phone.svg" alt="Phone icon">
+                <h4 class="contacts-perfom__item-name">Contact</h4>
+                <span class="contacts-perfom__item-value">Why not contact us directly?<a href="tel:01923 268900">01923 268900</a></span>
+            </div>
+            <div class="contacts-perfom__item">
+                <img class="contacts-perfom__item-img" src="img/mail.svg" alt="Mail icon">
+                <h4 class="contacts-perfom__item-name">Email Us</h4>
+                <span class="contacts-perfom__item-value">
+                    <a href="mailto:Info@gmail.com">Info@gmail.com</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="contacts-email">
+    <div class="container">
+        <h2 class="contacts-email__title section-title">Email Us</h2>
+        <form action="#" class="contacts-email__form">
+            <div class="contacts-email__inputs-box">
+                <label class="contacts-email__label">
+                    <span class="contacts-email__label-name">Name</span>
+                    <input type="text" name="contacts-name" class="contacts-email__input input-reset">
+                </label>
+                <label class="contacts-email__label">
+                    <span class="contacts-email__label-name">Tel/Mob</span>
+                    <input type="tel" name="contacts-tel" class="contacts-email__input input-reset">
+                </label>
+                <label class="contacts-email__label">
+                    <span class="contacts-email__label-name">Email address</span>
+                    <input type="email" name="contacts-email" class="contacts-email__input input-reset">
+                </label>
+            </div>
+            <label class="contacts-email__label contacts-email__label--textarea">
+                <span class="contacts-email__label-name contacts-email__label-name--big">Message content</span>
+                <textarea name="contacts-message" id="contacts-message" class="contacts-email__textarea input-reset"></textarea>
+            </label>
+            <button class="contacts-email__btn btn-reset yellow-btn" type="submit">Send</button>
+        </form>
+    </div>
+</section>
+      <div style="position:relative;overflow:hidden;">
+    <a href="https://yandex.ru/maps/62/krasnoyarsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Красноярск</a>
+    <a href="https://yandex.ru/maps/62/krasnoyarsk/house/vzlyotnaya_ulitsa_26/bUsYfwdkS0UAQFtsfXxydXRqZw==/?ll=92.904207%2C56.034893&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">
+        Взлётная улица, 26 на карте Красноярска — Яндекс Карты
+    </a>
+    <iframe src="https://yandex.ru/map-widget/v1/?ll=92.904207%2C56.034893&mode=whatshere&whatshere%5Bpoint%5D=92.904207%2C56.034893&whatshere%5Bzoom%5D=17&z=16&amp;scroll=false" width="100%" height="583" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+</div>
+    </main>
+    <div class="modals">
+  <div class="graph-modal reserve-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="reserve">
+      <div class="reserve-modal__head">
+        <span class="reserve-modal__head-title">Your Details</span>
+        <button class="btn-reset js-modal-close graph-modal__close reserve-modal__close" aria-label="Закрыть модальное окно"></button>
+      </div>
+      <div class="graph-modal__content reserve-modal__content">
+        <h2 class="reserve-modal__title">Reserve this vehicle now!</h2>
+        <span class="reserve-modal__descr">Pay a small reservation fee to secure your vehicle for complete peace of mind.</span>
+        <form action="#" class="reserve-modal__form">
+          <label class="reserve-modal__label">
+            <span class="reserve-modal__field-name">First name</span>
+            <input type="text" name="reserve-name" class="reserve-modal__input input-reset">
+          </label>
+          <label class="reserve-modal__label">
+            <span class="reserve-modal__field-name">Last name</span>
+            <input type="text" name="reserve-lastname" class="reserve-modal__input input-reset">
+          </label>
+          <label class="reserve-modal__label">
+            <span class="reserve-modal__field-name">Email address</span>
+            <input type="email" name="reserve-email" class="reserve-modal__input input-reset">
+          </label>
+          <label class="reserve-modal__label">
+            <span class="reserve-modal__field-name">Mobile number</span>
+            <input type="tel" name="reserve-tel" class="reserve-modal__input input-reset">
+          </label>
+          <label class="reserve-modal__chbx-label">
+            <input type="checkbox" name="reserve-checkbox" id="reserve-checkbox" class="reserve-modal__chbx">
+            <span class="reserve-modal__chbx-custom"></span>
+            <span class="reserve-modal__chbx-text">I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+          </label>
+          <button type="submit" class="reserve-modal__btn btn-reset yellow-btn">Book in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo-block">
+        <a href="#" class="footer__logo">
+          <img src="img/logo.svg" alt="Logotype">
+        </a>
+        <ul class="list-reset footer__socials">
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><span class="icon-footer-fb"></span></a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><span class="icon-footer-linkdn"></span></a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><span class="icon-footer-intagr"></span></a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><span class="icon-footer-twitter"></span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <h4 class="footer__title">Menu</h4>
+        <ul class="list-reset footer__menu-list">
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Home</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Used Cars</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Finance</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Delivery</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Contact</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Warranty</a></li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <h4 class="footer__title">Services</h4>
+        <ul class="list-reset footer__menu-list">
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Part exchange</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">We buy your car</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Reserve</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Vehicle sourcing</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 class="footer__title">Get In Touch</h4>
+        <address class="footer__address">FTR Performance 171 West Street, Dunstable Bedfordshire, LU6 1PD</address>
+        <a href="tel:01923268900" class="footer__phone">01923 268900</a>
+        <a href="mailto:info@gmail.com" class="footer__email">info@gmail.com</a>
+      </div>
+      <div class="footer__hours">
+        <h4 class="footer__title">Opening Hours</h4>
+        <span class="footer__info">Mon — Fri 09:00–18:00</span>
+        <span class="footer__info">Sat 09:30–16:30</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">FTR Performance Ltd is registered in England and Wales under company number: 11453765. 20 Church Lane, Kings Langley, Herts, England, WD4 8JU FTR Performance Ltd is authorised and regulated by the Financial Conduct Authority, under FCA number: 813992. We act as a creditbroker not a lender. We work with a number of carefully selected credit providers who may be able to offer you finance for your purchase. (Written Quotation available upon request). Whichever lender we introduce you to, we will typically receive commission from them (either a fixed fee or a fixed percentage of the amount you borrow). The lenders we work with could pay commission at different rates. All finance is subject to status and income. Terms and conditions apply. Applicants must be 18 years or over. We are only able to offer finance products from these providers. FTR Performance Ltd are registered with the Information Commissioners Office under registration number: ZB219383</p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

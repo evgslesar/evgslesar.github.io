@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Car Buy</title>
+  <!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="/car-buy/" class="header__logo">
+        <img src="img/logo.svg" alt="Logotype">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item nav__item--active"><a href="/" class="nav__link">Home</a></li>
+          <li class="nav__item nav__item--dropdown"><a href="catalog.html" class="nav__link">Used Cars <i class="icon-head-angle-down"></i></a>
+            <ul class="list-reset">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="finance.html" class="nav__link">Finance</a></li>
+          <li class="nav__item nav__item--dropdown"><a href="single.html" class="nav__link">Services <i class="icon-head-angle-down"></i></a>
+            <ul class="list-reset">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Delivery</a></li>
+          <li class="nav__item nav__item--dropdown"><a href="contacts.html" class="nav__link">Contact <i class="icon-head-angle-down"></i></a>
+            <ul class="list-reset">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Warranty</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero" style="background-image: url(img/main/hero-bg.webp);">
+  <div class="container hero__content">
+    <h1 class="hero__title main-title">Welcome to FTR Performance</h1>
+    <p class="hero__text">Drive away with complete peace of mind</p>
+    <button type="button" class="btn-reset hero__btn yellow-btn">Book in</button>
+    <form action="" class="hero__search-form form">
+      <label class="form__label">
+        <span>Any make</span>
+        <select class="form__select" data-choices name="make" id="make">
+          <option value="mercedes">Mercedes</option>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+        </select>
+      </label>
+      <label class="form__label">
+        <span>Any model</span>
+        <select class="form__select" data-choices name="model" id="model">
+          <option value="model-1">Model 1</option>
+          <option value="model-2">Model 2</option>
+          <option value="model-3">Model 3</option>
+        </select>
+      </label>
+      <label class="form__label form__label--switch">
+        <span>Price</span>
+        <span class="form__switch">
+          <input type="checkbox" class="form__switch-input" name="" id="payment-type">
+          <span class="form__switch-slide"></span>
+        </span>
+        <span>Finance</span>
+      </label>
+      <label class="form__label">
+        <span>Budget (max)</span>
+        <select class="form__select" data-choices name="budget" id="budget">
+          <option value="luxury">Luxury</option>
+          <option value="premium">Premium</option>
+          <option value="econom">Econom</option>
+        </select>
+      </label>
+      <button class="btn-reset dark-btn">Search</button>
+    </form>
+  </div>
+</section>
+
+      <section class="brands-section">
+    <div class="container">
+        <h2 class="section-title visually-hidden">Brands Section</h2>
+        <ul class="brands-section__list list-reset">
+            <li class="brands-section__list-item">
+                <a href="#" class="brands-section__list-link">
+                    <picture>
+                      <source srcset="img/brands/1.webp" type="image/webp">
+                      <img loading="lazy" src="img/brands/1.png" class="image" alt="Brand logo">
+                    </picture>
+                </a>
+            </li>
+            <li class="brands-section__list-item">
+                <a href="#" class="brands-section__list-link">
+                    <picture>
+                      <source srcset="img/brands/2.webp" type="image/webp">
+                      <img loading="lazy" src="img/brands/2.png" class="image" alt="Brand logo">
+                    </picture>
+                </a>
+            </li>
+            <li class="brands-section__list-item">
+                <a href="#" class="brands-section__list-link">
+                    <picture>
+                      <source srcset="img/brands/3.webp" type="image/webp">
+                      <img loading="lazy" src="img/brands/3.png" class="image" alt="Brand logo">
+                    </picture>
+                </a>
+            </li>
+            <li class="brands-section__list-item">
+                <a href="#" class="brands-section__list-link">
+                    <picture>
+                      <source srcset="img/brands/4.webp" type="image/webp">
+                      <img loading="lazy" src="img/brands/4.png" class="image" alt="Brand logo">
+                    </picture>
+                </a>
+            </li>
+            <li class="brands-section__list-item">
+                <a href="#" class="brands-section__list-link">
+                    <picture>
+                      <source srcset="img/brands/5.webp" type="image/webp">
+                      <img loading="lazy" src="img/brands/5.png" class="image" alt="Brand logo">
+                    </picture>
+                </a>
+            </li>
+            <li class="brands-section__list-item">
+                <a href="#" class="brands-section__list-link">
+                    <picture>
+                      <source srcset="img/brands/6.webp" type="image/webp">
+                      <img loading="lazy" src="img/brands/6.png" class="image" alt="Brand logo">
+                    </picture>
+                </a>
+            </li>
+            <li class="brands-section__list-item">
+                <a href="#" class="brands-section__list-link">
+                    <picture>
+                      <source srcset="img/brands/7.webp" type="image/webp">
+                      <img loading="lazy" src="img/brands/7.png" class="image" alt="Brand logo">
+                    </picture>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+      <section class="repr-example">
+    <div class="container-wide">
+        <h3 class="subsection-title repr-example__title">Representative Example</h3>
+        <ul class="repr-example__list list-reset">
+            <li class="repr-example__item">
+                <span class="repr-example__name">Product</span>
+                <span class="repr-example__value">HP</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Cash Price</span>
+                <span class="repr-example__value">£35,516.00</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Deposit</span>
+                <span class="repr-example__value">£1,000.00</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Total Amount of Credit</span>
+                <span class="repr-example__value">£34,516</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Total Amount Payable</span>
+                <span class="repr-example__value">£45,400.60</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Administration Fee</span>
+                <span class="repr-example__value">£0.00</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Option to Purchase Fee</span>
+                <span class="repr-example__value">£0.00</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Fixed Rate</span>
+                <span class="repr-example__value">10.9%</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Duration of Agreement</span>
+                <span class="repr-example__value">60</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Initial Payment</span>
+                <span class="repr-example__value">£740.01</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Monthly Payment</span>
+                <span class="repr-example__value">£740.01×58</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Final Payment</span>
+                <span class="repr-example__value">£740.01</span>
+            </li>
+        </ul>
+        <span class="repr-example__bottom">
+            <span class="repr-example__name">APR Representative</span>
+            <span class="repr-example__value">10.9%</span>
+        </span>
+    </div>
+</section>
+      <section class="reservation-section">
+    <div class="container">
+        <h2 class="reservation-section__title section-title">Reserve online in 4 easy steps</h2>
+        <div class="reservation-section__wrapper">
+            <div class="reservation-section__item">
+                <a href="#" class="reservation-section__link">
+                    <img class="reservation-section__img" src="img/reservation/1.svg" alt="Reservation icon">
+                    <img class="reservation-section__img-hover" src="img/reservation/1-h.svg" alt="Reservation icon">
+                    <h3 class="reservation-section__item-title">Find your car</h3>
+                    <p class="reservation-section__item-text">Find the vehicle that you’re interested in from our showroom.</p>
+                </a>
+            </div>
+            <div class="reservation-section__item">
+                <a href="#" class="reservation-section__link">
+                    <img class="reservation-section__img" src="img/reservation/2.svg" alt="Reservation icon">
+                    <img class="reservation-section__img-hover" src="img/reservation/2-h.svg" alt="Reservation icon">
+                    <h3 class="reservation-section__item-title">Personalise Your Deal</h3>
+                    <p class="reservation-section__item-text">Stack your deal with finance, warranty products or paint protection.</p>
+                </a>
+            </div>
+            <div class="reservation-section__item">
+                <a href="#" class="reservation-section__link">
+                    <img class="reservation-section__img" src="img/reservation/3.svg" alt="Reservation icon">
+                    <img class="reservation-section__img-hover" src="img/reservation/3-h.svg" alt="Reservation icon">
+                    <h3 class="reservation-section__item-title">Reserve Your Car</h3>
+                    <p class="reservation-section__item-text">Leave a small deposit to secure your vehicle.</p>
+                </a>
+            </div>
+            <div class="reservation-section__item">
+                <a href="#" class="reservation-section__link">
+                    <img class="reservation-section__img" src="img/reservation/4.svg" alt="Reservation icon">
+                    <img class="reservation-section__img-hover" src="img/reservation/4-h.svg" alt="Reservation icon">
+                    <h3 class="reservation-section__item-title">Collect or Deliver</h3>
+                    <p class="reservation-section__item-text">Arrange to collect your vehicle, or take advantage of our next day nationwide delivery.</p>
+                </a>
+            </div>
+        </div>
+        <button class="reservation-section__btn yellow-btn btn-reset">Book in</button>
+    </div>
+</section>
+      <section class="main-banners">
+    <div class="main-banners__right">
+        <div class="container main-banners__right-container">
+            <div class="main-banners__info">
+                <a href="#" class="main-banners__info-link">
+                    <h3 class="main-banners__info-title">Finance Specialists</h3>
+                    <p class="main-banners__info-text">Flexible finance options to suit your budget — 10,9% APR Representative</p>
+                    <button class="dark-btn btn-reset">Apply online</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-banners__left">
+        <div class="container main-banners__left-container">
+            <div class="main-banners__info">
+                <a href="#" class="main-banners__info-link">
+                    <h3 class="main-banners__info-title">AutoGroup Warranty</h3>
+                    <p class="main-banners__info-text">Drive away with complete peace of mind</p>
+                    <button class="dark-btn btn-reset">View dieals</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="cards-block">
+    <div class="container">
+        <h2 class="cards-block__title section-title">Prestige & Performance Specialists</h2>
+        <div class="cards-block__wrapper">
+            <div class="card-main">
+                <a href="#" class="card-main__img-link">
+                    <img src="img/main/card-img.webp" alt="Car Image">
+                </a>
+                <div class="card-main__content">
+                    <h3 class="card-main__title">
+                        <a href="#" class="card-main__title-link">2017 66 mercedes-benz e-class 2.0 e 220 d amg line premium 4d 192 bhp</a>
+                    </h3>
+                    <span class="card-main__price">$99.00</span>
+                    <span class="card-main__fin-info">Finance From £499 p/m</span>
+                    <button type="button" class="card-main__btn btn-reset outline-btn">Vehicle details</button>
+                </div>
+            </div>
+            <div class="card-main">
+                <a href="#" class="card-main__img-link">
+                    <img src="img/main/card-img.webp" alt="Car Image">
+                </a>
+                <div class="card-main__content">
+                    <h3 class="card-main__title">
+                        <a href="#" class="card-main__title-link">2017 66 mercedes-benz e-class 2.0 e 220 d amg line premium 4d 192 bhp</a>
+                    </h3>
+                    <span class="card-main__price">$99.00</span>
+                    <span class="card-main__fin-info">Finance From £499 p/m</span>
+                    <button type="button" class="card-main__btn btn-reset outline-btn">Vehicle details</button>
+                </div>
+            </div>
+            <div class="card-main">
+                <a href="#" class="card-main__img-link">
+                    <img src="img/main/card-img.webp" alt="Car Image">
+                </a>
+                <div class="card-main__content">
+                    <h3 class="card-main__title">
+                        <a href="#" class="card-main__title-link">2017 66 mercedes-benz e-class 2.0 e 220 d amg line premium 4d 192 bhp</a>
+                    </h3>
+                    <span class="card-main__price">$99.00</span>
+                    <span class="card-main__fin-info">Finance From £499 p/m</span>
+                    <button type="button" class="card-main__btn btn-reset outline-btn">Vehicle details</button>
+                </div>
+            </div>
+            <div class="card-main">
+                <a href="#" class="card-main__img-link">
+                    <img src="img/main/card-img.webp" alt="Car Image">
+                </a>
+                <div class="card-main__content">
+                    <h3 class="card-main__title">
+                        <a href="#" class="card-main__title-link">2017 66 mercedes-benz e-class 2.0 e 220 d amg line premium 4d 192 bhp</a>
+                    </h3>
+                    <span class="card-main__price">$99.00</span>
+                    <span class="card-main__fin-info">Finance From £499 p/m</span>
+                    <button type="button" class="card-main__btn btn-reset outline-btn">Vehicle details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="repr-example repr-example--pd">
+    <div class="container-wide">
+        <h3 class="subsection-title repr-example__title">Representative Example</h3>
+        <ul class="repr-example__list list-reset">
+            <li class="repr-example__item">
+                <span class="repr-example__name">Product</span>
+                <span class="repr-example__value">HP</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Cash Price</span>
+                <span class="repr-example__value">£35,516.00</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Deposit</span>
+                <span class="repr-example__value">£1,000.00</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Total Amount of Credit</span>
+                <span class="repr-example__value">£34,516</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Total Amount Payable</span>
+                <span class="repr-example__value">£45,400.60</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Administration Fee</span>
+                <span class="repr-example__value">£0.00</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Option to Purchase Fee</span>
+                <span class="repr-example__value">£0.00</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Fixed Rate</span>
+                <span class="repr-example__value">10.9%</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Duration of Agreement</span>
+                <span class="repr-example__value">60</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Initial Payment</span>
+                <span class="repr-example__value">£740.01</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Monthly Payment</span>
+                <span class="repr-example__value">£740.01×58</span>
+            </li>
+            <li class="repr-example__item">
+                <span class="repr-example__name">Final Payment</span>
+                <span class="repr-example__value">£740.01</span>
+            </li>
+        </ul>
+        <span class="repr-example__bottom">
+            <span class="repr-example__name">APR Representative</span>
+            <span class="repr-example__value">10.9%</span>
+        </span>
+    </div>
+</section>
+      <section class="main-banners-flex">
+    <div class="main-banners-flex__left">
+        <div class="container main-banners-flex__left-container">
+            <div class="main-banners-flex__info">
+                <a href="#" class="main-banners-flex__info-link">
+                    <h3 class="main-banners-flex__info-title">Part Exchange</h3>
+                    <p class="main-banners-flex__info-text">Looking to sell your car? We buy cars</p>
+                    <button class="dark-btn btn-reset">Trade in</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-banners-flex__right">
+        <div class="container main-banners-flex__right-container">
+            <div class="main-banners-flex__info">
+                <a href="#" class="main-banners-flex__info-link">
+                    <h3 class="main-banners-flex__info-title">We Buy Your Car</h3>
+                    <p class="main-banners-flex__info-text">Looking to sell your car? We buy cars</p>
+                    <button class="dark-btn btn-reset">Sell car</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="inst-section">
+    <div class="container">
+        <h2 class="inst-section__title section-title"><span class="icon-inst-section"></span> Instagram — @FTRPerformance</h2>
+        <div class="inst-section__wrapper">
+            <div class="inst-section__item">
+                <a href="#" class="inst-section__link">
+                    <span style="background-image: url(img/inst/1.webp);" class="inst-section__img"></span>
+                </a>
+            </div>
+            <div class="inst-section__item">
+                <a href="#" class="inst-section__link">
+                    <span style="background-image: url(img/inst/2.webp);" class="inst-section__img"></span>
+                </a>
+            </div>
+            <div class="inst-section__item">
+                <a href="#" class="inst-section__link">
+                    <span style="background-image: url(img/inst/3.webp);" class="inst-section__img"></span>
+                </a>
+            </div>
+            <div class="inst-section__item">
+                <a href="#" class="inst-section__link">
+                    <span style="background-image: url(img/inst/4.webp);" class="inst-section__img"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="welcome-section">
+    <div class="container">
+        <h2 class="welcome-section__title section-title">
+            Welcome to FTR Performance
+        </h2>
+        <div class="welcome-section__content">
+            <span class="welcome-section__subtitle">
+                FTR Performance, offering you a premium service for your next specialist vehicle
+            </span>
+            <p>With over 50 years combined experience in the motor trade, this family-run business offers a unique service, supplying specialist used cars to the discerning client. Based in FTR Performance we have links to all major rail and road routes.</p>
+            <p>Specialising in prestige brands such as Land Rover, Mercedes, Porsche and BMW it is highly likely that if you don’t see exactly what you want on our website, the chances are that we can source it for you through our numerous contacts within the trade.</p>
+        </div>
+        <a href="#" class="welcome-section__read-all yellow-link">Read all</a>
+    </div>
+</section>
+    </main>
+    <div class="modals">
+  <div class="graph-modal reserve-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="reserve">
+      <div class="reserve-modal__head">
+        <span class="reserve-modal__head-title">Your Details</span>
+        <button class="btn-reset js-modal-close graph-modal__close reserve-modal__close" aria-label="Закрыть модальное окно"></button>
+      </div>
+      <div class="graph-modal__content reserve-modal__content">
+        <h2 class="reserve-modal__title">Reserve this vehicle now!</h2>
+        <span class="reserve-modal__descr">Pay a small reservation fee to secure your vehicle for complete peace of mind.</span>
+        <form action="#" class="reserve-modal__form">
+          <label class="reserve-modal__label">
+            <span class="reserve-modal__field-name">First name</span>
+            <input type="text" name="reserve-name" class="reserve-modal__input input-reset">
+          </label>
+          <label class="reserve-modal__label">
+            <span class="reserve-modal__field-name">Last name</span>
+            <input type="text" name="reserve-lastname" class="reserve-modal__input input-reset">
+          </label>
+          <label class="reserve-modal__label">
+            <span class="reserve-modal__field-name">Email address</span>
+            <input type="email" name="reserve-email" class="reserve-modal__input input-reset">
+          </label>
+          <label class="reserve-modal__label">
+            <span class="reserve-modal__field-name">Mobile number</span>
+            <input type="tel" name="reserve-tel" class="reserve-modal__input input-reset">
+          </label>
+          <label class="reserve-modal__chbx-label">
+            <input type="checkbox" name="reserve-checkbox" id="reserve-checkbox" class="reserve-modal__chbx">
+            <span class="reserve-modal__chbx-custom"></span>
+            <span class="reserve-modal__chbx-text">I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+          </label>
+          <button type="submit" class="reserve-modal__btn btn-reset yellow-btn">Book in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo-block">
+        <a href="#" class="footer__logo">
+          <img src="img/logo.svg" alt="Logotype">
+        </a>
+        <ul class="list-reset footer__socials">
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><span class="icon-footer-fb"></span></a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><span class="icon-footer-linkdn"></span></a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><span class="icon-footer-intagr"></span></a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" class="footer__socials-link"><span class="icon-footer-twitter"></span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <h4 class="footer__title">Menu</h4>
+        <ul class="list-reset footer__menu-list">
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Home</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Used Cars</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Finance</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Delivery</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Contact</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Warranty</a></li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <h4 class="footer__title">Services</h4>
+        <ul class="list-reset footer__menu-list">
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Part exchange</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">We buy your car</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Reserve</a></li>
+          <li class="footer__menu-item"><a href="" class="footer__menu-link">Vehicle sourcing</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 class="footer__title">Get In Touch</h4>
+        <address class="footer__address">FTR Performance 171 West Street, Dunstable Bedfordshire, LU6 1PD</address>
+        <a href="tel:01923268900" class="footer__phone">01923 268900</a>
+        <a href="mailto:info@gmail.com" class="footer__email">info@gmail.com</a>
+      </div>
+      <div class="footer__hours">
+        <h4 class="footer__title">Opening Hours</h4>
+        <span class="footer__info">Mon — Fri 09:00–18:00</span>
+        <span class="footer__info">Sat 09:30–16:30</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">FTR Performance Ltd is registered in England and Wales under company number: 11453765. 20 Church Lane, Kings Langley, Herts, England, WD4 8JU FTR Performance Ltd is authorised and regulated by the Financial Conduct Authority, under FCA number: 813992. We act as a creditbroker not a lender. We work with a number of carefully selected credit providers who may be able to offer you finance for your purchase. (Written Quotation available upon request). Whichever lender we introduce you to, we will typically receive commission from them (either a fixed fee or a fixed percentage of the amount you borrow). The lenders we work with could pay commission at different rates. All finance is subject to status and income. Terms and conditions apply. Applicants must be 18 years or over. We are only able to offer finance products from these providers. FTR Performance Ltd are registered with the Information Commissioners Office under registration number: ZB219383</p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

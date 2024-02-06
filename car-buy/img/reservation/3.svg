@@ -1,0 +1,17 @@
+<svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vuesax/twotone/calendar-tick">
+<g id="calendar-tick">
+<path id="Vector" d="M22 5.5V13.75" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M44 5.5V13.75" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M9.625 24.9974H56.375" stroke="#E39822" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Group">
+<path id="Vector_4" d="M60.5 52.25C60.5 54.3125 59.9225 56.265 58.905 57.915C57.0075 61.105 53.515 63.25 49.5 63.25C46.7225 63.25 44.1925 62.2325 42.2675 60.5C41.415 59.785 40.6725 58.905 40.095 57.915C39.0775 56.265 38.5 54.3125 38.5 52.25C38.5 46.1725 43.4225 41.25 49.5 41.25C52.8 41.25 55.7425 42.7075 57.75 44.99C59.455 46.9425 60.5 49.4725 60.5 52.25Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M45.21 52.25L47.9325 54.9724L53.7899 49.5549" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_6" d="M57.75 23.375V44.99C55.7425 42.7075 52.8 41.25 49.5 41.25C43.4225 41.25 38.5 46.1725 38.5 52.25C38.5 54.3125 39.0775 56.265 40.095 57.915C40.6725 58.905 41.415 59.785 42.2675 60.5H22C12.375 60.5 8.25 55 8.25 46.75V23.375C8.25 15.125 12.375 9.625 22 9.625H44C53.625 9.625 57.75 15.125 57.75 23.375Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M32.9876 37.675H33.0123" stroke="#E39822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M22.8094 37.675H22.8341" stroke="#E39822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M22.8096 45.925H22.8343" stroke="#E39822" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
