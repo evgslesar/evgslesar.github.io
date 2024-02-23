@@ -9,32 +9,47 @@
   <meta name="theme-color" content="#111111">
   <title>Car Buy</title>
   <!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+  />
+
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/fancy-gallery.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
 <body class="page__body">
   <div class="site-container">
     <header class="header">
+  <div class="mobile-nav-fade" data-menu-overlay></div>
   <div class="container">
     <div class="header__wrapper">
       <a href="/car-buy/" class="header__logo">
         <img src="img/logo.svg" alt="Logotype">
       </a>
-      <nav class="header__nav nav">
+      <nav class="header__nav nav"  data-menu>
         <ul class="list-reset nav__list">
-          <li class="nav__item nav__item--active"><a href="/" class="nav__link">Home</a></li>
-          <li class="nav__item nav__item--dropdown"><a href="catalog.html" class="nav__link">Used Cars <i class="icon-head-angle-down"></i></a>
+          <li class="nav__item nav__item--active"><a href="/car-buy/" class="nav__link">Home</a></li>
+          <li class="nav__item nav__item--dropdown"><a href="catalog.html" class="nav__link">Used Cars</a> <i class="icon-head-angle-down menu-arrow"></i>
             <ul class="list-reset">
-              <li><a href="#">Link 1</a></li>
+              <li><a href="single.html">Single Car</a></li>
               <li><a href="#">Link 2</a></li>
               <li><a href="#">Link 3</a></li>
               <li><a href="#">Link 4</a></li>
             </ul>
           </li>
           <li class="nav__item"><a href="finance.html" class="nav__link">Finance</a></li>
-          <li class="nav__item nav__item--dropdown"><a href="single.html" class="nav__link">Services <i class="icon-head-angle-down"></i></a>
+          <li class="nav__item nav__item--dropdown"><a href="#" class="nav__link">Services</a> <i class="icon-head-angle-down menu-arrow"></i>
             <ul class="list-reset">
               <li><a href="#">Link 1</a></li>
               <li><a href="#">Link 2</a></li>
@@ -43,7 +58,7 @@
             </ul>
           </li>
           <li class="nav__item"><a href="#" class="nav__link">Delivery</a></li>
-          <li class="nav__item nav__item--dropdown"><a href="contacts.html" class="nav__link">Contact <i class="icon-head-angle-down"></i></a>
+          <li class="nav__item nav__item--dropdown"><a href="contacts.html" class="nav__link">Contact</a> <i class="icon-head-angle-down menu-arrow"></i>
             <ul class="list-reset">
               <li><a href="#">Link 1</a></li>
               <li><a href="#">Link 2</a></li>
@@ -54,6 +69,9 @@
           <li class="nav__item"><a href="#" class="nav__link">Warranty</a></li>
         </ul>
       </nav>
+      <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
     </div>
 
   </div>

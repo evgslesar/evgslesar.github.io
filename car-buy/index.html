@@ -9,32 +9,47 @@
   <meta name="theme-color" content="#111111">
   <title>Car Buy</title>
   <!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+  />
+
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/fancy-gallery.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
 <body class="page__body">
   <div class="site-container">
     <header class="header">
+  <div class="mobile-nav-fade" data-menu-overlay></div>
   <div class="container">
     <div class="header__wrapper">
       <a href="/car-buy/" class="header__logo">
         <img src="img/logo.svg" alt="Logotype">
       </a>
-      <nav class="header__nav nav">
+      <nav class="header__nav nav"  data-menu>
         <ul class="list-reset nav__list">
-          <li class="nav__item nav__item--active"><a href="/" class="nav__link">Home</a></li>
-          <li class="nav__item nav__item--dropdown"><a href="catalog.html" class="nav__link">Used Cars <i class="icon-head-angle-down"></i></a>
+          <li class="nav__item nav__item--active"><a href="/car-buy/" class="nav__link">Home</a></li>
+          <li class="nav__item nav__item--dropdown"><a href="catalog.html" class="nav__link">Used Cars</a> <i class="icon-head-angle-down menu-arrow"></i>
             <ul class="list-reset">
-              <li><a href="#">Link 1</a></li>
+              <li><a href="single.html">Single Car</a></li>
               <li><a href="#">Link 2</a></li>
               <li><a href="#">Link 3</a></li>
               <li><a href="#">Link 4</a></li>
             </ul>
           </li>
           <li class="nav__item"><a href="finance.html" class="nav__link">Finance</a></li>
-          <li class="nav__item nav__item--dropdown"><a href="single.html" class="nav__link">Services <i class="icon-head-angle-down"></i></a>
+          <li class="nav__item nav__item--dropdown"><a href="#" class="nav__link">Services</a> <i class="icon-head-angle-down menu-arrow"></i>
             <ul class="list-reset">
               <li><a href="#">Link 1</a></li>
               <li><a href="#">Link 2</a></li>
@@ -43,7 +58,7 @@
             </ul>
           </li>
           <li class="nav__item"><a href="#" class="nav__link">Delivery</a></li>
-          <li class="nav__item nav__item--dropdown"><a href="contacts.html" class="nav__link">Contact <i class="icon-head-angle-down"></i></a>
+          <li class="nav__item nav__item--dropdown"><a href="contacts.html" class="nav__link">Contact</a> <i class="icon-head-angle-down menu-arrow"></i>
             <ul class="list-reset">
               <li><a href="#">Link 1</a></li>
               <li><a href="#">Link 2</a></li>
@@ -54,6 +69,9 @@
           <li class="nav__item"><a href="#" class="nav__link">Warranty</a></li>
         </ul>
       </nav>
+      <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
     </div>
 
   </div>
@@ -98,7 +116,7 @@
           <option value="econom">Econom</option>
         </select>
       </label>
-      <button class="btn-reset dark-btn">Search</button>
+      <button class="form__btn btn-reset dark-btn">Search</button>
     </form>
   </div>
 </section>
@@ -106,64 +124,66 @@
       <section class="brands-section">
     <div class="container">
         <h2 class="section-title visually-hidden">Brands Section</h2>
-        <ul class="brands-section__list list-reset">
-            <li class="brands-section__list-item">
-                <a href="#" class="brands-section__list-link">
-                    <picture>
-                      <source srcset="img/brands/1.webp" type="image/webp">
-                      <img loading="lazy" src="img/brands/1.png" class="image" alt="Brand logo">
-                    </picture>
-                </a>
-            </li>
-            <li class="brands-section__list-item">
-                <a href="#" class="brands-section__list-link">
-                    <picture>
-                      <source srcset="img/brands/2.webp" type="image/webp">
-                      <img loading="lazy" src="img/brands/2.png" class="image" alt="Brand logo">
-                    </picture>
-                </a>
-            </li>
-            <li class="brands-section__list-item">
-                <a href="#" class="brands-section__list-link">
-                    <picture>
-                      <source srcset="img/brands/3.webp" type="image/webp">
-                      <img loading="lazy" src="img/brands/3.png" class="image" alt="Brand logo">
-                    </picture>
-                </a>
-            </li>
-            <li class="brands-section__list-item">
-                <a href="#" class="brands-section__list-link">
-                    <picture>
-                      <source srcset="img/brands/4.webp" type="image/webp">
-                      <img loading="lazy" src="img/brands/4.png" class="image" alt="Brand logo">
-                    </picture>
-                </a>
-            </li>
-            <li class="brands-section__list-item">
-                <a href="#" class="brands-section__list-link">
-                    <picture>
-                      <source srcset="img/brands/5.webp" type="image/webp">
-                      <img loading="lazy" src="img/brands/5.png" class="image" alt="Brand logo">
-                    </picture>
-                </a>
-            </li>
-            <li class="brands-section__list-item">
-                <a href="#" class="brands-section__list-link">
-                    <picture>
-                      <source srcset="img/brands/6.webp" type="image/webp">
-                      <img loading="lazy" src="img/brands/6.png" class="image" alt="Brand logo">
-                    </picture>
-                </a>
-            </li>
-            <li class="brands-section__list-item">
-                <a href="#" class="brands-section__list-link">
-                    <picture>
-                      <source srcset="img/brands/7.webp" type="image/webp">
-                      <img loading="lazy" src="img/brands/7.png" class="image" alt="Brand logo">
-                    </picture>
-                </a>
-            </li>
-        </ul>
+        <div class="brands-section__wrapper">
+            <div class="f-carousel brands-section__list" id="brandsCarousel">
+                <div class="f-carousel__slide brands-section__list-item">
+                    <a href="#" class="brands-section__list-link">
+                        <picture>
+                        <source srcset="img/brands/1.webp" type="image/webp">
+                        <img loading="lazy" src="img/brands/1.png" class="image" alt="Brand logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="f-carousel__slide brands-section__list-item">
+                    <a href="#" class="brands-section__list-link">
+                        <picture>
+                        <source srcset="img/brands/2.webp" type="image/webp">
+                        <img loading="lazy" src="img/brands/2.png" class="image" alt="Brand logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="f-carousel__slide brands-section__list-item">
+                    <a href="#" class="brands-section__list-link">
+                        <picture>
+                        <source srcset="img/brands/3.webp" type="image/webp">
+                        <img loading="lazy" src="img/brands/3.png" class="image" alt="Brand logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="f-carousel__slide brands-section__list-item">
+                    <a href="#" class="brands-section__list-link">
+                        <picture>
+                        <source srcset="img/brands/4.webp" type="image/webp">
+                        <img loading="lazy" src="img/brands/4.png" class="image" alt="Brand logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="f-carousel__slide brands-section__list-item">
+                    <a href="#" class="brands-section__list-link">
+                        <picture>
+                        <source srcset="img/brands/5.webp" type="image/webp">
+                        <img loading="lazy" src="img/brands/5.png" class="image" alt="Brand logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="f-carousel__slide brands-section__list-item">
+                    <a href="#" class="brands-section__list-link">
+                        <picture>
+                        <source srcset="img/brands/6.webp" type="image/webp">
+                        <img loading="lazy" src="img/brands/6.png" class="image" alt="Brand logo">
+                        </picture>
+                    </a>
+                </div>
+                <div class="f-carousel__slide brands-section__list-item">
+                    <a href="#" class="brands-section__list-link">
+                        <picture>
+                        <source srcset="img/brands/7.webp" type="image/webp">
+                        <img loading="lazy" src="img/brands/7.png" class="image" alt="Brand logo">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
       <section class="repr-example">
@@ -573,6 +593,18 @@
 </footer>
 
   </div>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+<script>
+const brandsCarousel = new Carousel(document.getElementById('brandsCarousel'), {
+  Navigation: false,
+  Dots: true,
+
+  infinite: true,
+  center: false,
+  slidesPerPage: 1,
+  transition: false,
+});
+</script>
 </body>
 
 </html>
